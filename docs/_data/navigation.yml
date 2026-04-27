@@ -10,8 +10,13 @@
       description: Applications, terminology registries, mappings and projects related to PaNET
 
 - name: Browse
-  link: "https://pan-ontologies.github.io/PaNET/index-en.html"
-  description: Ontology Specification Page
+  link: "/ontology_specifications.html"
+  description: Detailed information on terms and their relationships. Very technical.
+  subnav:
+    - name: Old version (widoco)
+      link: "https://pan-ontologies.github.io/PaNET/index-en.html"
+    - name: New version (jekyll)
+      link: "/ontology_specifications.html"
 
 - name: Getting Started
   link: "/std_op_proc.html"

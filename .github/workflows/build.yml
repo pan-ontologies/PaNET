@@ -75,6 +75,30 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: |
+          pip install --upgrade pip
+          pip install rdflib
+
+      - uses: actions/download-artifact@v4
+        with:
+          name: PaNET
+
+      - name: Copy ontology files to Jekyll data directory
+        run: |
+          mkdir -p docs/_data
+          cp PaNET.owl docs/_data
+          cp PaNET_reasoned.owl docs/_data
+
+      - name: Convert ontology to json
+        run: |
+          python ./docs/_data/owl2json.py
+
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:
