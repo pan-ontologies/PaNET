@@ -1,0 +1,30 @@
+# called items with site.data.navigation
+- name: Home
+  link: "/"
+  description: General information on PaNET
+  subnav:
+    - name: Scope of PaNET
+      link: "/"
+    - name: Applications
+      link: "/applications.html"
+      description: Applications, terminology registries, mappings and projects related to PaNET
+
+- name: Browse
+  link: "https://pan-ontologies.github.io/PaNET/index-en.html"
+  description: Ontology Specification Page
+
+- name: Documentation
+  link: "/std_op_proc.html"
+  description: Documentation of PaNET
+  subnav:
+    - name: Standard Operating Procedure
+      link: "/std_op_proc.html"
+    - name: Git Workflow
+      link: "/workflow.html"
+      description: Guideline for contributions
+    - name: Build the Robot Environment
+      link: "/build.html"
+      description: Instructions to handle the robot ontology verification software
+    - name: Make a Release
+      link: "/release.html"
+      description: Guidelines for realeases (for Maintainers).
