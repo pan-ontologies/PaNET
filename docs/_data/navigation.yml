@@ -13,7 +13,7 @@
   link: "https://pan-ontologies.github.io/PaNET/index-en.html"
   description: Ontology Specification Page
 
-- name: Documentation
+- name: Getting Started
   link: "/std_op_proc.html"
   description: Documentation of PaNET
   subnav:
@@ -22,9 +22,23 @@
     - name: Git Workflow
       link: "/workflow.html"
       description: Guideline for contributions
+    - name: Code of Conduct
+      link: "/CODE_OF_CONDUCT.html"
+      description: Guidelines for ethical behaviour, respectful interactions, and community standards.
+
+- name: Technical References
+  link: "/build.html"
+  description: Instructions to handle the robot ontology verification software
+  subnav:
     - name: Build the Robot Environment
       link: "/build.html"
       description: Instructions to handle the robot ontology verification software
+    - name: Mappings
+      link: "/Mappings.html"
+      description: Guidelines for creating and maintaining relations to other semantic artifacts.
+    - name: Guidelines for the Documentation Pages
+      link: "/DOCS.html"
+      description: Guidelines for creating and maintaining the webpage.
     - name: Make a Release
       link: "/release.html"
       description: Guidelines for realeases (for Maintainers).
