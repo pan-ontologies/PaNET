@@ -56,6 +56,11 @@ body {
   color: var(--panet-black);
 }
 
+.highlight {
+  max-width: 800px;
+  overflow-x: auto;
+}
+
 /* Wrapper adjustments */
 #wrapper {
   display: flex;
@@ -373,6 +378,7 @@ body {
     width: 100%;
     position: static;
     max-height: none;
+    min-width: 0;
     border-left: none;
     border-bottom: 1px solid var(--panet-border-grey);
   }

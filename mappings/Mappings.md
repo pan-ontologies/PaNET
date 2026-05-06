@@ -1,3 +1,6 @@
+---
+---
+
 # Mappings
 
 A mapping connects the terms or concepts listed in different semantic artifacts. A semantic artifact can be a 
