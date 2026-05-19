@@ -96,8 +96,6 @@ body {
   position: sticky;
   top: 120px;
   height: fit-content;
-  max-height: calc(100vh - 140px);
-  overflow-y: auto;
   box-shadow: -2px 0 8px rgba(17, 33, 62, 0.05);
 }
 
