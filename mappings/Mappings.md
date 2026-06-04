@@ -48,6 +48,20 @@ A new line in the csv consists of
 
 The template includes some extra information in angle brackets `<>` as well as an example line. Please replace or delete these when creating your own mapping.
 
+## Versioning
+
+The mapping header includes information on the version of the mapping (`mapping_set_id`). We decided to use the following versioning system for mappings
+
+- `v2.3.5` &rarr; `v2.3.6`
+    - Fixing desired functionality, not adding any new functionality.
+    - Example: fixing typos
+- `v2.3.5` &rarr; `v2.4.0`
+    - Adding new functionality but consumers of the information can safely upgrade.
+    - Example: new terms or mappings
+- `v2.3.5` &rarr; `v3.0.0`
+    - Adding new functionality with a risk that consumers of the information might need to adjust their use of the mapping.
+    - Example: deleting core entries, renaming terms
+
 ## Example
 
 ```

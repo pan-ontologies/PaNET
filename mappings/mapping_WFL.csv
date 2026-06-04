@@ -10,7 +10,7 @@
 # license: https://creativecommons.org/licenses/by/4.0/,,,,,,,,,
 # mapping_set_description: Manually curated alignment of the PaNET ontology with wayforlight.,,,,,,,,,
 #   Intended to be used for ontological analysis.,,,,,,,,,
-# mapping_set_id: mapping_WFL_PaNET_v1.0,,,,,,,,,
+# mapping_set_id: mapping_WFL_PaNET_v1.0.0,,,,,,,,,
 # mapping_set_version: '2025-11-12',,,,,,,,,
 # object_source: https://www.wayforlight.eu/technique/,,,,,,,,,
 # subject_source: https://pan-ontologies.github.io/PaNET/latest/index-en.html,,,,,,,,,
