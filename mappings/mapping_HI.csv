@@ -10,7 +10,7 @@
 # license: https://creativecommons.org/licenses/by/4.0/,,,,,,,,,
 # mapping_set_description: Manually curated alignment of the PaNET ontology with the Helmholtz Imaging Vocabulary.,,,,,,,,,
 #   Intended to be used for ontological analysis.,,,,,,,,,
-# mapping_set_id: mapping_IUCr_PaNET_v1.0,,,,,,,,,
+# mapping_set_id: mapping_IUCr_PaNET_v1.0.0,,,,,,,,,
 # mapping_set_version: '2025-11-18',,,,,,,,,
 # object_source: https://helmholtz-imaging.de/,,,,,,,,,
 # subject_source: https://pan-ontologies.github.io/PaNET/latest/index-en.html,,,,,,,,,
