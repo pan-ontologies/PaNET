@@ -1,0 +1,17 @@
+checks:
+  RDF:
+    LeadingOrTrailingSpaceCheck: false
+    NamespaceHijackingCheck: false
+    SeparatorOmittedInNamespaceCheck: false
+  RDFS:
+    UnconnectedClassCheck: false
+    VersionIriExistenceCheck: false
+    LeadingOrTrailingSpaceCheck: false
+    MissingDescriptionCheck: false
+    MissingLabelCheck: false
+  OWL:
+    FileExtensionInIriCheck: false
+    OntologyIriOboConformanceCheck: false
+    SynonymsAsClassesCheck: false
+    UnconnectedClassCheck: false
+    VersionIriExistenceCheck: false

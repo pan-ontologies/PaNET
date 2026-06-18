@@ -59,6 +59,33 @@ jobs:
           path: site/
           retention-days: 7
 
+  validate-panet:
+    needs: build-panet
+    runs-on: ubuntu-latest
+    container: dlrdw/linteddata:3.0.0
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Download freshly built PaNET
+        uses: actions/download-artifact@v4
+        with:
+          name: PaNET
+
+      - name: Check with LintedData
+        run: LintedData PaNET_reasoned.owl --markdown linted-data.md --junit linted-data.xml --config .github/linteddata.yaml
+
+      - name: Add LintedData results to job summary
+        if: ${{ !cancelled() }}
+        run: head -q -c1024k linted-data.md >> $GITHUB_STEP_SUMMARY
+
+      - name: Publish Test Results
+        uses: EnricoMi/publish-unit-test-result-action@v2
+        if: (!cancelled())
+        with:
+            files: |
+                  linted-data.xml
+
   build-webpage:
     runs-on: ubuntu-latest
     needs: build-panet
