@@ -30,6 +30,9 @@
     - name: Code of Conduct
       link: "/CODE_OF_CONDUCT.html"
       description: Guidelines for ethical behaviour, respectful interactions, and community standards.
+    - name: Add a New Term
+      link: "/best_practice_new_term.html"
+      description: Guidelines for adding a new technique to PaNET.
 
 - name: Technical References
   link: "/build.html"

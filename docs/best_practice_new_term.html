@@ -1,0 +1,317 @@
+---
+---
+
+<h1>Best Practice: New Terms</h1>
+
+<p>
+    The text is mainly written for researchers to guide them in adding a new term to PaNET.
+</p>
+
+<mark>Blue</mark> texts are additional information for the PaNET maintenance group and can be ignored.
+
+
+A new term can be a technique, a specifier, and/or a relationship.
+
+<details>
+    <summary class="h2">Technical Steps to Request a New Term</summary>
+    <h2 class="hidden">Technical Steps to Request a New Term</h2>
+
+    <ol>
+        <li>
+            Make sure that the term is note yet listed in PaNET, e.g. search <a href="https://pan-ontologies.github.io/PaNET/ontology_specifications.html">this page</a>.
+        </li>
+        <li>
+            Create a new issue by clicking the green "New issue" button on the "Issues" page.
+            <img width=600px id="new_issue" src="assets/images/new_issue.svg" alt="screenshot of the PaNET GitHub webpage with the location of the 'new issue' button."><br>
+            Use the template "New term request".<br>
+            <img width=600px id="new_term_request" src="assets/images/new_term_request.svg" alt="screenshot of the PaNET GitHub webpage after pressing the 'new issue' button.">
+        </li>
+        <li>
+            Follow the recommendations on <a href="#requiredInformation">Required Information</a>.
+        </li>
+        <li>
+            Publish the Issue by clicking the green "Create" button at the bottom.
+        </li>
+        <li>
+            Wait for approval by the PaNET team, often after a discussion.
+        </li>
+        <li>
+            Create a pull request. This step should be taken by the requester, but can also be handled by any other participant of the discussion. This might depend on how familiar the requester is with handling the PaNET.csv. Follow the recommendations on <a href="#prNewTerm">Pull Request for New Terms</a>.
+        </li>
+    </ol>
+</details>
+
+<details>
+    <summary class="h2">Required Information</summary>
+    <h2 class="hidden" id="requiredInformation">Required Information</h2>
+
+    <p>
+        Decide what kind of term you want to add:
+        <ul>
+            <li>
+                <strong>technique</strong> (class), defined by a probe and a process (e.g. x-ray diffraction)
+            </li>
+            <li>
+                <strong>specifier</strong> (class), a descriptor of a technique (e.g. diffraction, obtain spatial map, versus time, neutron). Currently, all specifier classes have a corresponding technique class, e.g. "diffraction" (PaNET01022) and "diffraction" (PaNET2020018); this might change soon. The former refers to the group of techniques that can be described by the process of diffraction, while the latter represents the process of diffraction itself. The technique class is linked to it specifier class via the object property, e.g. "definedbyprocess".
+            </li>
+            <li>
+                <strong>relationship</strong> (object property), describes the relation of two objects, e.g. defined by purpose. These terms should be well covered by PaNET, we do not expect frequent updates here.
+            </li>
+        </ul>
+    </p>
+
+    <h3>Title</h3>
+
+    <p>
+        Create a meaningful title, e.g. "New term: X-ray Absorption Spectroscopy".
+    </p>
+
+    <h3>New term label</h3>
+
+    <p>
+        Assign a fitting name to the term. If multiple options are suitable, choose a full-text representation, you can designate abbreviations and additional names as synonyms later on.
+    </p>
+
+    <h3>Definition</h3>
+
+    <p>
+        Use a self-explanatory, short description. Please avoid explaining a term with itself.
+    </p>
+
+    <h3>Position in the ontology</h3>
+
+    <p>
+        The position in the ontology is described by the type of the relationship (axiom type) and a related term that already exists in the ontology.
+    </p>
+
+    <p>
+        Possible axiom types for techniques and specifiers
+        <ul>
+            <li>
+                <strong>is equivalent to</strong>,
+                <ul>
+                    <li>
+                        Term1 equals the logical conjunction of Term2 and Term3, Term1 = Term2 AND Term3, e.g. "x-ray spectroscopy" is equivalent to "x-ray probe" and "spectroscopy", because we can be sure that any technique that has "x-ray probe" and "spectroscopy" as superclasses cannot be disjoint from "x-ray spectroscopy".
+                    </li>
+                    <li>
+                        <mark>
+                            For Maintainers: Technique1 = (ObjectProperty1 some Specifier1), e.g. "x-ray probe" (technique) is equivalent to "definedbyprobe" (object property) some "x-ray" (specifier).
+                        </mark>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <strong>is subclass of</strong>, e.g. "x-ray tomography" is subclass of "imaging" and "x-ray probe", but there are also other subclasses of "imaging" and "x-ray probe" like "x-ray microscopy".
+            </li>
+            <li>
+                <strong>is superclass of</strong>, inverse relation to "is subclass of".
+            </li>
+            <li>
+                <strong>disjoint with</strong>, Term1 and Term2 have no common elements, e.g. "elastic scattering" and "inelastic scattering".
+            </li>
+        </ul>
+    </p>
+    <p>
+        Check if more general (parent class) or more specific (child class) techniques already exist, e.g. "diffraction" is a more general term for "powder diffraction". Add those with the strongest relations as super- and subclasses. Please give their PaNET IDs.
+    </p>
+
+    <p>
+        Check if the use specifiers is beneficial, e.g. "scanning probe" as an additional descriptor to "transmission x-ray microscopy". These terms are usually (direct) subclasses of
+        <ul>
+            <li>defined by experimental probe (PaNET00002)</li>
+            <li>defined by experimental physical process (PaNET00003)</li>
+            <li>defined by functional dependence (PaNET00004)</li>
+            <li>defined by purpose (PaNET00005)</li>
+        </ul>
+        Please give their PaNET IDs.
+    </p>
+
+    <p>
+        <mark>
+            For Maintainers: Possible axiom types for relationships (object properties)
+            <ul>
+                <li>
+                    <strong>super property</strong>, e.g. "photon and neutron technique relationships" is a super property of "definedbyprocess".
+                </li>
+                <li>
+                    <strong>domain/range</strong>. Used to indicate that the object property maps from a domain to a range, e.g. "definedbyprocess" maps from "photon and neutron technique" to "process"
+                </li>
+                <li>
+                    <strong>characteristic</strong>
+                    <ul>
+                        <li>
+                            one or several of the following list: functional, inverse functional, transitive, symmetric, asymmetric, reflexive, irreflexive
+                        </li>
+                        <li>
+                            e.g. "definedbyprocess" is asymmetric
+                        </li>
+                        <li>
+                            More detailed information here.
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </mark>
+    </p>
+
+    <h4>What if a required specifier or superclass does not exist?</h4>
+
+    <p>
+        Please create a sub-issue to add the missing specifier or term, using the same template to make a "New term request".
+    </p>
+    <p>
+        Example:
+        <ol>
+            <li>
+                New term is "x-ray absorption spectroscopy in transmission mode" and "x-ray absorption spectroscopy" exists in PaNET, but "transmission mode" (or something equivalent) does not.
+            </li>
+            <li>
+                Add "transmission mode (to be done)" iIn the hierarchy section.
+            </li>
+            <li>
+                After publishing this issue, you find a box in your post "Create sub-issue", use it to create a new term request on "transmission mode".
+            </li>
+        </ol>
+    </p>
+
+    <h3>Synonyms</h3>
+
+    <p>
+        Synonyms can be abbreviations.
+    </p>
+
+    <h3>Cross-References</h3>
+
+    <p>
+        Add a cross-reference to a reliable (as persistent as possible) source, e.g. link to Wikidata.
+    </p>
+    <p>
+        Add DOIs of 1 or 2 peer-reviewed journal articles using the technique.
+    </p>
+
+    <h3>Motviation</h3>
+
+    <p>
+        Add a brief motivation on why this technique should be added, e.g. technique used at your facility, with a link to a website that proves this.
+    </p>
+</details>
+
+<details>
+    <summary class="h2">Pull Request for New Term</summary>
+    <h2 class="hidden" id="prNewTerm">Pull Request for New Term</h2>
+
+    <h4>How to choose the ID for the New Term?</h4>
+
+    <p>
+        The ID for a new term depends on its type: technique, specifier, or relationship.
+    </p>
+
+    <h5>Generally intended ID ranges</h5>
+    <table id="ID_ranges">
+        <tr>
+            <th>Type</th>
+            <th>Min. ID</th>
+            <th>Max. ID</th>
+        </tr>
+        <tr>
+            <td>Techniques</td>
+            <td>0</td>
+            <td>999999</td>
+        </tr>
+        <tr>
+            <td>"defined by ..." terms</td>
+            <td>2</td>
+            <td>99</td>
+        </tr>
+        <tr>
+            <td>"defined by experimental probe" terms</td>
+            <td>100</td>
+            <td>199</td>
+        </tr>
+        <tr>
+            <td>"defined by experimental physical process" termss</td>
+            <td>200</td>
+            <td>299</td>
+        </tr>
+        <tr>
+            <td>"defined by functional dependence" terms</td>
+            <td>300</td>
+            <td>399</td>
+        </tr>
+        <tr>
+            <td>"defined by purpose" terms</td>
+            <td>400</td>
+            <td>499</td>
+        </tr>
+        <tr>
+            <td>Other, more specific terms</td>
+            <td>1000</td>
+            <td>999999</td>
+        </tr>
+        <tr>
+            <td>Relationships</td>
+            <td>1000000</td>
+            <td>1999999</td>
+        </tr>
+        <tr>
+            <td>Specifier</td>
+            <td>2000000</td>
+            <td></td>
+        </tr>
+    </table>
+
+    <h5>New "defined by ..." term</h5>
+    <p>
+        When a new "defined by..." term is created, it will receive an ID i in the range 2 to 99. Its subclasses will cover the ID range (i-1)*100 to i*100-1.
+    </p>
+    <p>
+        Example: "defined by functional dependence" (PaNET00004) with subclasses in PaNET00300 to PaNET00399.
+    </p>
+
+    <h3>Check consistency of the ontology</h3>
+
+    <mark>
+        For Maintainers: Please check the changes in axioms caused by adding the new term and the relationships. This will guarantee that no unexpected subclass relationships have been added or correct subclass relationships have been removed.
+        <ol>
+            <li>
+                Download the latest PaNET.csv file from the GitHub Repository, and the modified CSV file that you want to add to the pull request. The former acts as the "reference" file with which the latter will be compared.
+            </li>
+            <li>
+                Use the ROBOT template command to build an OWL file for each of the two CSV files. Here is a template for the code:
+                <pre class="code-block"><code>
+dcterms_prefix=${DCTERMS_PREFIX:-terms}
+robot \                                                                        
+    template \
+        --template "PaNET.csv" \
+        --prefix "PaNET: http://purl.org/pan-science/PaNET/" \
+    reason --reasoner hermit \
+        --remove-redundant-subclass-axioms false \
+        --include-indirect false \
+        --exclude-tautologies all \
+        --axiom-generators "$generated_axioms" \
+    annotate \
+        --ontology-iri "http://purl.org/pan-science/PaNET/PaNET.owl" \
+        --add-prefix "sdo: http://schema.org/" \
+        --add-prefix "${dcterms_prefix}: http://purl.org/dc/terms/" \
+        --output "PaNET.owl" \
+    reason \
+        --reasoner hermit \
+        --remove-redundant-subclass-axioms false \
+        --include-indirect true \
+        --exclude-tautologies all \
+        --axiom-generators "$generated_axioms" \
+        --output "PaNET with inferred axioms.owl"
+                </code></pre>
+            </li>
+            <li>
+                Use the ROBOT diff command to compare the two OWL files. This will produce an output text file that lists the differences between the two OWL files. Here is a template for the code:
+                <pre class="code-block"><code>
+robot diff --left "PaNET_reference.owl" --right "PaNET_new.owl" --output compare.txt
+                </code></pre>
+            </li>
+            <li>
+                Check the text file to make sure that there are no unexpected changes in the taxonomic structure of PaNET.
+            </li>
+        </ol>
+    </mark>
+</details>
