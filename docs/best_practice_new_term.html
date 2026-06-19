@@ -18,10 +18,10 @@ A new term can be a technique, a specifier, and/or a relationship.
 
     <ol>
         <li>
-            Make sure that the term is note yet listed in PaNET, e.g. search <a href="https://pan-ontologies.github.io/PaNET/ontology_specifications.html">this page</a>.
+            Make sure that the term is not yet listed in PaNET, e.g. search <a href="https://pan-ontologies.github.io/PaNET/ontology_specifications.html">this page</a>.
         </li>
         <li>
-            Create a new issue by clicking the green "New issue" button on the "Issues" page.
+            Create a new issue by clicking the green "New issue" button on the "Issues" page as shown in the images below. Alternatively click <a href="https://github.com/pan-ontologies/PaNET/issues/new?template=new_term_template.md">here</a> to open the page directly.
             <img width=600px id="new_issue" src="assets/images/new_issue.svg" alt="screenshot of the PaNET GitHub webpage with the location of the 'new issue' button."><br>
             Use the template "New term request".<br>
             <img width=600px id="new_term_request" src="assets/images/new_term_request.svg" alt="screenshot of the PaNET GitHub webpage after pressing the 'new issue' button.">
@@ -52,10 +52,10 @@ A new term can be a technique, a specifier, and/or a relationship.
                 <strong>technique</strong> (class), defined by a probe and a process (e.g. x-ray diffraction)
             </li>
             <li>
-                <strong>specifier</strong> (class), a descriptor of a technique (e.g. diffraction, obtain spatial map, versus time, neutron). Currently, all specifier classes have a corresponding technique class, e.g. "diffraction" (PaNET01022) and "diffraction" (PaNET2020018); this might change soon. The former refers to the group of techniques that can be described by the process of diffraction, while the latter represents the process of diffraction itself. The technique class is linked to it specifier class via the object property, e.g. "definedbyprocess".
+                <strong>specifier</strong> (class), a descriptor of a technique (e.g. diffraction, obtain spatial map, versus time, neutron). Currently, all specifier classes have a corresponding technique class, e.g. "diffraction" (PaNET01022) and "diffraction" (PaNET2020018); this might change soon. The former refers to the group of techniques that can be described by the process of diffraction, while the latter represents the process of diffraction itself. The technique class is linked to its specifier class via the object property, e.g. "definedbyprocess".
             </li>
             <li>
-                <strong>relationship</strong> (object property), describes the relation of two objects, e.g. defined by purpose. These terms should be well covered by PaNET, we do not expect frequent updates here.
+                <strong>relationship</strong> (object property), describes the relation of two objects, e.g. defined by purpose. These terms should be well covered by PaNET already, we do not expect frequent updates here.
             </li>
         </ul>
     </p>
@@ -116,7 +116,7 @@ A new term can be a technique, a specifier, and/or a relationship.
     </p>
 
     <p>
-        Check if the use specifiers is beneficial, e.g. "scanning probe" as an additional descriptor to "transmission x-ray microscopy". These terms are usually (direct) subclasses of
+        Check if the use of specifiers is beneficial, e.g. "scanning probe" as an additional descriptor to "transmission x-ray microscopy". These terms are usually (direct) subclasses of
         <ul>
             <li>defined by experimental probe (PaNET00002)</li>
             <li>defined by experimental physical process (PaNET00003)</li>
@@ -146,7 +146,7 @@ A new term can be a technique, a specifier, and/or a relationship.
                             e.g. "definedbyprocess" is asymmetric
                         </li>
                         <li>
-                            More detailed information here.
+                            More detailed information <a href="https://protegeproject.github.io/protege/views/object-property-characteristics/">here</a>.
                         </li>
                     </ul>
                 </li>
@@ -166,7 +166,7 @@ A new term can be a technique, a specifier, and/or a relationship.
                 New term is "x-ray absorption spectroscopy in transmission mode" and "x-ray absorption spectroscopy" exists in PaNET, but "transmission mode" (or something equivalent) does not.
             </li>
             <li>
-                Add "transmission mode (to be done)" iIn the hierarchy section.
+                Add "transmission mode (to be done)" in the hierarchy section.
             </li>
             <li>
                 After publishing this issue, you find a box in your post "Create sub-issue", use it to create a new term request on "transmission mode".
@@ -189,7 +189,7 @@ A new term can be a technique, a specifier, and/or a relationship.
         Add DOIs of 1 or 2 peer-reviewed journal articles using the technique.
     </p>
 
-    <h3>Motviation</h3>
+    <h3>Motivation</h3>
 
     <p>
         Add a brief motivation on why this technique should be added, e.g. technique used at your facility, with a link to a website that proves this.
@@ -229,7 +229,7 @@ A new term can be a technique, a specifier, and/or a relationship.
             <td>199</td>
         </tr>
         <tr>
-            <td>"defined by experimental physical process" termss</td>
+            <td>"defined by experimental physical process" terms</td>
             <td>200</td>
             <td>299</td>
         </tr>
