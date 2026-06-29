@@ -63,6 +63,10 @@ jobs:
     needs: build-panet
     runs-on: ubuntu-latest
     container: dlrdw/linteddata:3.0.0
+    permissions:
+      checks: write
+      contents: read       # Required to checkout code
+
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
