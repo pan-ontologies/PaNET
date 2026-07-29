@@ -6,7 +6,7 @@ checks:
   RDFS:
     UnconnectedClassCheck: false
     VersionIriExistenceCheck: false
-    LeadingOrTrailingSpaceCheck: false
+    LeadingOrTrailingSpaceCheck: true
     MissingDescriptionCheck: false
     MissingLabelCheck: false
   OWL:
