@@ -5,8 +5,6 @@ checks:
     SeparatorOmittedInNamespaceCheck: false
   RDFS:
     UnconnectedClassCheck: false
-    VersionIriExistenceCheck: false
-    LeadingOrTrailingSpaceCheck: true
     MissingDescriptionCheck: false
     MissingLabelCheck: false
   OWL:
@@ -14,4 +12,3 @@ checks:
     OntologyIriOboConformanceCheck: false
     SynonymsAsClassesCheck: false
     UnconnectedClassCheck: false
-    VersionIriExistenceCheck: false
