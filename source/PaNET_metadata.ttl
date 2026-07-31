@@ -9,6 +9,30 @@
 @prefix vann: <http://purl.org/vocab/vann/>.
 @base <http://purl.org/pan-science/PaNET/PaNET.owl> .
 
+dcterms:created rdfs:label "Creation Date"@en .
+
+dcterms:creator rdfs:label "Creator"@en .
+
+dcterms:license rdfs:label "License"@en .
+
+dcterms:title rdfs:label "Title"@en .
+
+foaf:homepage rdfs:label "Homepage"@en .
+
+foaf:name rdfs:label "Name"@en .
+
+foaf:Person rdfs:label "Person"@en .
+
+foaf:workInfoHomepage rdfs:label "Work Info Homepage"@en .
+
+sdo:affiliation rdfs:label "Affiliation"@en .
+
+sdo:name rdfs:label "Name"@en .
+
+vann:preferredNamespacePrefix rdfs:label "Preferred Namespace Prefix"@en .
+
+vann:preferredNamespaceUri rdfs:label "Preferred Namespace URI"@en .
+
 <http://purl.org/pan-science/PaNET/PaNET.owl>
   a owl:Ontology ;
   dcterms:created "2025-10-21"^^xsd:string ; 
