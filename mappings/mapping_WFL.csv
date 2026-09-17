@@ -1,20 +1,22 @@
-# curie_map:,,,,,,,,,
-#   panet: http://purl.org/pan-science/PaNET/,,,,,,,,,
-#   rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#,,,,,,,,,
-#   rdfs: http://www.w3.org/2000/01/rdf-schema#,,,,,,,,,
-#   skos: http://www.w3.org/2004/02/skos/core#,,,,,,,,,
-#   sssom: https://w3id.org/sssom/,,,,,,,,,
-#   wfl: https://www.wayforlight.eu/technique/,,,,,,,,,
-#   orcid: https://orcid.org/,,,,,,,,,
-#   semapv: https://w3id.org/semapv/vocab/,,,,,,,,,
-# license: https://creativecommons.org/licenses/by/4.0/,,,,,,,,,
-# mapping_set_description: Manually curated alignment of the PaNET ontology with wayforlight.,,,,,,,,,
-#   Intended to be used for ontological analysis.,,,,,,,,,
-# mapping_set_id: mapping_WFL_PaNET_v1.0.0,,,,,,,,,
-# mapping_set_version: '2025-11-12',,,,,,,,,
-# object_source: https://www.wayforlight.eu/technique/,,,,,,,,,
-# subject_source: https://pan-ontologies.github.io/PaNET/latest/index-en.html,,,,,,,,,
-# ,,,,,,,,,
+# curie_map:									
+#   panet: https://w3id.org/PaN/PaNET/1.3.0/PaNET#
+#   panetsource: https://w3id.org/PaN/PaNET/1.3.0/
+#   rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#									
+#   rdfs: http://www.w3.org/2000/01/rdf-schema#									
+#   skos: http://www.w3.org/2004/02/skos/core#									
+#   sssom: https://w3id.org/sssom/									
+#   wfl: https://www.wayforlight.eu/catalogue?Techniques=
+#   wflsource: https://www.wayforlight.eu/catalogue
+#   orcid: https://orcid.org/									
+#   semapv: https://w3id.org/semapv/vocab/									
+# license: https://creativecommons.org/licenses/by/4.0/									
+# mapping_set_description: Manually curated alignment of the PaNET ontology with wayforlight.									
+#   Intended to be used for ontological analysis.									
+# mapping_set_id: https://github.com/pan-ontologies/PaNET/blob/master/mappings/mapping_WFL.csv									
+# mapping_set_version: '2025-11-13'									
+# object_source: wflsource:/									
+# subject_source: panetsource:PaNET.owl
+# 									
 subject_id,subject_label,predicate_id,object_id,object_label,mapping_justification,author_id,object_source_version,mapping_date,confidence
 panet:PaNET00410,medical application,skos:exactMatch,wfl:1419,Medical application,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
 panet:PaNET01006,THz photon probe,skos:narrowMatch,wfl:6002,THz spectroscopy,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
