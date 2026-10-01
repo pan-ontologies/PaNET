@@ -48,6 +48,13 @@
         <hr>
         
         <div class="detail-body">
+          {% for s in super %}
+            {% if s["@id"] == "http://purl.org/pan-science/PaNET/PaNET00001" %}
+              <div class="related-box">
+                <a href="https://pan-training.eu/ontology-term-search?include_base_classes&include_sub_classes&iri={{ id }}" target="_blank">Related Training Materials</a>
+              </div>
+            {% endif %}
+          {% endfor %}
           <p><b>IRI:</b> {{ id }}</p>
           
           {% if alt_labels %}

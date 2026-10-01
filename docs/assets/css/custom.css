@@ -518,3 +518,9 @@ mark {
   transform: translateY(-2px);
   box-shadow: 0 4px 15px rgba(186, 69, 118, 0.4);
 }
+
+.related-box {
+  float: right;
+  font-size: 0.8rem;
+  text-align: right;
+}
