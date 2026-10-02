@@ -6,7 +6,6 @@ checks:
   RDFS:
     UnconnectedClassCheck: false
     MissingDescriptionCheck: false
-    MissingLabelCheck: false
   OWL:
     FileExtensionInIriCheck: false
     OntologyIriOboConformanceCheck: false
