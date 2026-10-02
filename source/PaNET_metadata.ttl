@@ -7,6 +7,8 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix sdo: <http://schema.org/> .
 @prefix vann: <http://purl.org/vocab/vann/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
 @base <http://purl.org/pan-science/PaNET/PaNET.owl> .
 
 dcterms:created rdfs:label "Creation Date"@en .
@@ -25,9 +27,17 @@ foaf:Person rdfs:label "Person"@en .
 
 foaf:workInfoHomepage rdfs:label "Work Info Homepage"@en .
 
+obo:IAO_0000115 rdfs:label "definition"@en .
+
+obo:IAO_0000119 rdfs:label "definition source"@en .
+
+owl:versionIRI rdfs:label "IRI Version"@en .
+
 sdo:affiliation rdfs:label "Affiliation"@en .
 
 sdo:name rdfs:label "Name"@en .
+
+skos:altLabel rdfs:label "Alternative Label"@en .
 
 vann:preferredNamespacePrefix rdfs:label "Preferred Namespace Prefix"@en .
 
