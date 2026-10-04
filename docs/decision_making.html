@@ -1,0 +1,157 @@
+---
+---
+
+<h1>Change Process in PaNET</h1>
+
+<p>
+    <b>Revisions to PaNET</b> can vary in scope and impact. For example, they may involve:
+    <ul>
+        <li><b>Experimental aspects</b> (e.g., adding new techniques, updating relationships between techniques).</li>
+        <li><b>Ontology structure</b> (e.g., file format owl vs csv, categories, annotations).</li>
+        <li><b>Other PaNET-related topics</b> (e.g. changing the change process).</li>
+    </ul>
+
+    The process of requesting, reviewing and approving changes is mostly identical, but slightly differs depending on the nature of the change.
+</p>
+
+
+<details>
+    <summary class="h2">Requesting Changes</summary>
+    <h2 class="hidden">Requesting Changes</h2>
+
+    <p>
+        Changes to PaNET should always include sufficient information for the PaNET members to properly evaluate them. This includes specifically the <b>Motivation</b> and intended <b>Modifications</b>.
+
+        For updates to <b>experimental aspects</b>, the use of the "New Term" Template is recommended, as well as the consultation of the <a href="best_practice_new_term.html">Best Practices Document</a>. All changes to experimental information must be supported by <a href="#references">references</a> from authoritative sources before they can be accepted.
+
+        Changes to the <b>ontology structure and other topics</b> are typically requested by members of the <a href="#panetTeam">PaNET maintenance team</a>.</p>
+
+    <h3 id="references">References (Experimental Changes only)</h3>
+
+    <p>
+        These sources include:
+        <ul>
+            <li>
+                <b>Highest Level of Authority:</b> Publications from national and international commissions, e.g.
+                <ul>
+                    <li>International Tables for Crystallography</li>
+                    <li>IUPAC gold book</li>
+                </ul>
+            </li>
+            <li>
+                <b>High Level of Authority:</b> Peer reviewed journal articles, e.g. 
+                <ul>
+                    <li>Original research</li>
+                    <li>Reviews</li>
+                    <li>Methodological papers</li>
+                </ul>
+            </li>
+            <li>
+                <b>Lower Level of Authority:</b> Other sources, e.g.
+                <ul>
+                    <li>Technical reports</li>
+                    <li>Descriptions of beamlines and setups</li>
+                </ul>
+            </li>
+        </ul>
+    </p>
+
+    <h3>Definitions (Experimental Changes only)</h3>
+
+    <p>
+        The definitions from different sources can either align with each other, be conflicting, or unclear. If the provided <b>definitions are consistent</b> with one another, the changes will be applied as described. If the definitions contradict each other or are unclear, one of the following approaches will be taken:
+        
+        <ul>
+            <li><b>Combine definitions (preferred option):</b> Where possible, merge the definitions into a single, coherent version. This is the preferred solution when the definitions can be reconciled.</li>
+            <li><b>Ignore the less credible definition:</b> If one definition is significantly less reliable, it may be disregarded in favor of the more credible one.</li>
+            <li><b>Create multiple entries with disambiguation:</b> In cases where definitions are equally credible but incompatible, the term will be listed in multiple versions, each with a disambiguation note (e.g., "Term (context A)" vs. "Term (context B)").</li>
+        </ul>
+    </p>
+</details>
+
+
+<details>
+    <summary class="h2">Voting</summary>
+    <h2 class="hidden">Voting</h2>
+
+    <p>
+        A vote should be initiated 4 weeks after the issue is created. If the discussion remains active, the discussion phase may be extended by two additional weeks. If no solution has been proposed within this time, send a remainder and re-evaluate after 2 weeks. If there is still no solution, the issue should be closed due to a lack of interest.
+    </p>
+
+    <h3>Voting Options</h3>
+
+    <p>
+        The vote usually includes the following options: 
+        <ul>
+            <li><b>Positive:</b> agreeing with proposed changes.</li>
+            <li><b>Negative:</b> not agreeing with changes. To better understand the underlying concerns, please describe them clearly in a comment.</li>
+            <li><b>Neutral:</b> Not a clear opinion. Please vote neutral to indicate that you noticed the proposed changes, but you do not have a clear opinion (e.g. due to insufficient expertise). Note: Neutral votes help to estimate how many people have reviewed the proposed changes. While three positive votes from fifteen may not indicate a strong support, three positive votes alongside five neutral ones suggest broader consideration.</li>
+        </ul>
+    </p>
+
+    <h3>Voting Location</h3>
+
+    <p>
+        Voting can take place during a PaNET meeting, via an issue in the repository or a combination of both. A vote is announced by email to the PaNET maintenance team. The result of the meeting vote will be summarized in the corresponding issue. The online vote will remain open for one week, with the option to extend it by an additional week if insufficient votes are received.
+    </p>
+
+    <h3>Eligible Voters</h3>
+
+    <p>
+        All active members of the <a href="panetTeam">PaNET Maintenance Team</a> are allowed to vote. 
+    </p>
+</details>
+
+
+<details>
+    <summary class="h2">Evaluating</summary>
+    <h2 class="hidden">Evaluating</h2>
+
+    <p>
+        A member of the PaNET Maintenance Team will verify whether <b>consensus</b> has been reached based on all of the following criteria:
+        <ul>
+            <li><b>No blocking concerns:</b> No team member raises a show-stopping issue (e.g., "This breaks backward compatibility").</li>
+            <li><b>Mitigated risks:</b> Known risks are documented and accepted (e.g., "This may slow down the API by 5%").</li>
+            <li><b>Unanimous agreement:</b> If at least 50% of the active PaNET members have voted (during a meeting or online) and the simple majority supports the change, the modifications can be implemented immediately.</li>
+        </ul>
+
+        If <b>consensus</b> is reached:
+        <ol>
+            <li>The maintainer adds a comment: <br>Consensus reached after two weeks of inactivity. No blocking concerns remain. Preparing merge requests for implementation.</li>
+            <li>A merge request is prepared.</li>
+            <li>The subsequent review only needs to consider changes to the structure of the ontology, if involved. The experimental aspects are already covered.</li>
+        </ol>
+
+        If <b>no consensus</b> is reached, the discussion should be revisited, e.g. by adding new (literature) sources, and followed by a fresh vote. Again, the discussion time should be at least two weeks. In case of <b>experimental aspects and two failed votes</b> based on literature sources, an expert panel must be consulted. In case of <b>structural changes and other PaNET-related topics, two failed votes</b> shall be interpreted as an indication that the respective issue is not relevant to PaNET.
+    </p>
+
+    <h3>Expert Panel</h3>
+
+    <p>
+        The Expert Panel must represent the relevant scientific community for the topic under discussion:
+        <ul>
+            <li>Probe-specific: must be accepted by representatives of two or more facilities using this probe. There must not be an opposing opinion.</li>
+            <li>General Terms: must be accepted by one or more facilities for each probe represented in PaNET. There must not be an opposing opinion.
+        </ul>
+
+        The Panel is selected by PaNET members across facilities, with eligibility extending to any scientist actively and regularly engaged in the topic. Meetings may be held in person or online, and discussion notes will be documented within the corresponding issue. Since expertise varies by domain, the composition of the Expert Panel may differ depending on the specific focus of each discussion.
+    </p>
+</details>
+
+
+<details>
+    <summary class="h2">PaNET Maintenance Team</summary>
+    <h2 class="hidden" id="panetTeam">PaNET Maintenance Team</h2>
+
+    <p>
+        If you want to contribute regularly to the development of PaNET, join our Maintenance Team by joining the <a href="index.html">mailing list</a>. The mailing list is used for invitations to our regular meetings including the meeting agenda and “homework”. 
+        We consider members to be <b>contributors</b> if they did at least one of the following things within the past 12 months // since last major release by:
+        <ul>
+            <li>Commenting on or creating an issue</li>
+            <li>Creating a  pull request or authoring a commit</li>
+            <li>Regularly participating in meetings</li>
+        </ul>
+        Contributors are listed in the PaNET_metadata.ttl.
+        During the PaNET meetings, a contributor can ask for permission levels “write” and “maintain” in the repository in order to approve merge requests and merge branches.
+    </p>
+</details>
