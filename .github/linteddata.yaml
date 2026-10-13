@@ -5,7 +5,6 @@ checks:
     SeparatorOmittedInNamespaceCheck: false
   RDFS:
     MissingDescriptionCheck: false
-    MissingLabelCheck: false
   OWL:
     FileExtensionInIriCheck: false
     OntologyIriOboConformanceCheck: false
