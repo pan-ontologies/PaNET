@@ -62,7 +62,7 @@ jobs:
   validate-panet:
     needs: build-panet
     runs-on: ubuntu-latest
-    container: dlrdw/linteddata:3.0.0
+    container: dlrdw/linteddata:3.0.1
     permissions:
       checks: write
       contents: read       # Required to checkout code
