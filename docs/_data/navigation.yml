@@ -50,3 +50,6 @@
     - name: Make a Release
       link: "/release.html"
       description: Guidelines for realeases (for Maintainers).
+    - name: Update the ontology
+      link: "/decision_making.html"
+      description: Community rules for updating the ontology.
