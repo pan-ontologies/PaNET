@@ -2,7 +2,6 @@ checks:
   RDF:
     LeadingOrTrailingSpaceCheck: false
     NamespaceHijackingCheck: false
-    SeparatorOmittedInNamespaceCheck: false
   RDFS:
     MissingDescriptionCheck: false
     MissingLabelCheck: false
