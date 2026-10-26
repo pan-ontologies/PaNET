@@ -1,0 +1,19 @@
+---
+---
+
+{% assign sorted_news = site.data.news | sort: "date" | reverse %}
+
+<h1>News</h1>
+
+<div class="news-grid">
+  {% for item in sorted_news %}
+    <div class="news-container">
+      <div class="news-img-container">
+        <img src="{{ item.img_path | relative_url }}" alt="{{ item.title }}" class="news-image">
+      </div>
+      <h2 class="news-header">{{ item.title }}</h2>
+      <p class="news-date">{{ item.date }}</p>
+      <p>{{ item.description }}</p>
+    </div>
+  {% endfor %}
+</div>

@@ -1,0 +1,50 @@
+[
+    {
+        "title": "PaNET Update Process Defined",
+        "date": "2026-10-22",
+        "img_path": "../assets/images/news/PaNET_change_process.svg",
+        "description": "Following long discussions, we have successfully defined a standardized process for modifying the ontology, covering the knowledge base as well as technical questions."
+    },
+    {
+        "title": "PaN Training cross references",
+        "date": "2026-10-02",
+        "img_path": "../assets/images/news/pan-training-logo.png",
+        "description": "The <a href='https://pan-training.eu/'>PaN Training platform</a> provides useful training material around Photons and Neutrons, also including the experimental techniques. We now provide links towards the material for each <a href='/ontology_specifications.html'>technique</a>."
+    },
+    {
+        "title": "TS4NFDI Incubator Kick-Off Meeting",
+        "date": "2026-09-16",
+        "img_path": "../assets/images/news/TS4NFDI_kick_off.svg",
+        "description": "During the Kick-Off Meeting, we discussed the current status of PaNET and outlined the most important goals of the incubator. See the <a href='https://terminology.services.base4nfdi.de/incubators'>dashboard</a> for more information."
+    },
+    {
+        "title": "TS4NFDI Incubator Approved",
+        "date": "2026-07-07",
+        "img_path": "../assets/images/news/TS4NFDI_incubator_approved.svg",
+        "description": "Our application to the <a href='https://terminology.services.base4nfdi.de/'>TS4NFDI</a> Incubator has been accepted! We will now receive expert support for all our questions around mappings."
+    },
+    {
+        "title": "Ontology Linter initiated",
+        "date": "2026-06-18",
+        "img_path": "../assets/images/news/LintedData.png",
+        "description": "At a conference, we learned about <a href='https://gitlab.com/dlr-dw/linteddata'>LintedData</a>, a linting tool for onotologies. We initiated the linter for PaNET. We are now working on activating all checks."
+    },
+    {
+        "title": "1st Mapping to other vocabulary",
+        "date": "2025-12-16",
+        "img_path": "../assets/images/news/mapping_WFL.svg",
+        "description": "Mappings connect terms and concepts listed in different semantic artifacts (e.g. vocabularies, ontologies). We created our first mapping: to <a href='https://www.wayforlight.eu/'>Way For Light</a>."
+    },
+    {
+        "title": "Release v1.3.0",
+        "date": "2025-10-21",
+        "img_path": "../assets/images/news/release_v1-3-0.png",
+        "description": "We just released our <a href='https://github.com/pan-ontologies/PaNET/releases/tag/v1.3.0'>new PaNET version</a>. Highlights are the introduction of specifiers, 2 new terms, tidied-up relationships, and updated metadata."
+    },
+    {
+        "title": "Journal Publication Accepted",
+        "date": "2025-06-12",
+        "img_path": "../assets/images/news/PaNET_article_2025.png",
+        "description": "Our article 'Towards a new vision of PaNET: enhancing reasoning capabilities for better photon and neutron data discovery' has been accepted. Read the full article in <a href='https://doi.org/10.1107/S1600577525005272'>Journal of Synchrotron Radiation</a>."
+    }
+]
