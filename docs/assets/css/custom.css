@@ -314,15 +314,33 @@ mark {
   font-style: italic;
 }
 
-.code-block {
-    background: var(--panet-light-grey);
-    color: var(--panet-black);
-    padding: 8px;
-    border-radius: 8px;
-    border: 2px solid var(--panet-border-grey);
-    overflow-x: auto;
-    font-family: 'Fira Code', monospace;
-    line-height: 1.5;
+/* Customize code blocks */
+pre {
+  background-color: var(--panet-light-grey);
+  padding: 1.5em;
+  border-radius: 7px;
+  border-left: 4px solid var(--panet-pink);
+  overflow-x: auto;
+  font-family: monospace;
+  font-size: 12px;
+  line-height: 1.6em;
+}
+
+pre code {
+  background: none;
+  border: none;
+  padding: 0;
+  display: block;
+  color: var(--panet-black);
+}
+
+code {
+  background-color: var(--panet-light-grey);
+  color: var(--panet-dark-blue);
+  padding: 0.1em 0.3em;
+  border-radius: 3px;
+  font-family: monospace;
+  font-size: 12px;
 }
 
 #ID_ranges {

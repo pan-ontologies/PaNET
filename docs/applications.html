@@ -2,68 +2,83 @@
 ---
 <h1>Applications</h1>
 <div class="scope-content">
-    <p>PaNET provides persistent identifiers (PIDs) for experimental techniques in Photon and 
-        Neutron research. Thus it is an essential part of metadata in this field.</p>
+    <p>PaNET provides persistent identifiers (PIDs) for experimental techniques in Photon and
+        Neutron research. Thus it is an essential part of metadata in this field:</p>
 
-    <h2>Applications</h2>
     <ul class="md-itemization">
-        <li><strong>experimental data at large facilities:</strong> ongoing discussions with 
-            the <a href="https://www.nexusformat.org/">NeXus</a> community to define a 
+        <li><strong>experimental data at large facilities:</strong> ongoing discussions with
+            the <a href="https://www.nexusformat.org/">NeXus</a> community to define a
             standardized approch.</li>
-        <li><strong>experimental data at lab devices:</strong> ongoing discussions with an 
+        <li><strong>experimental data at lab devices:</strong> ongoing discussions with an
             industry partner to include PaNET in the lab raw data.</li>
-        <li><strong>scientific publications:</strong> a 
-            <a href="https://www.desy.de/~nentm/ET2BL.html">BibTeX Citation Creator</a> is 
+        <li><strong>scientific publications:</strong> a
+            <a href="https://www.desy.de/~nentm/ET2BL.html">BibTeX Citation Creator</a> is
             available to create citations for individual terms.</li>
         <li><strong>beamline finder:</strong> 
-            <a href="https://www.desy.de/~nentm/ET2BL.html">proof of concept</a> at DESY; 
-            a data base links the beamlines to the provided techniques and sample environment; 
+            <a href="https://www.desy.de/~nentm/ET2BL.html">proof of concept</a> at DESY;
+            a data base links the beamlines to the provided techniques and sample environment;
             a webpage allows access to the database and filter results</li>
-        <li><strong><a href="https://icatproject.org/">ICAT</a> Metadata Catalog</strong> has a 
-            dedicated Technique table to hold PaNET terms. 
-            It has a many-to-many relation with Dataset, so you can tag datasets in ICAT with the 
-            experimental technique that has been used to create the dataset. There is also a 
+        <li><strong><a href="https://icatproject.org/">ICAT</a> Metadata Catalog</strong> has a
+            dedicated Technique table to hold PaNET terms.
+            It has a many-to-many relation with Dataset, so you can tag datasets in ICAT with the
+            experimental technique that has been used to create the dataset. There is also a
             contributed helper script to populate that Technique table from a PaNET OWL file.</li>
         <li><strong><a href="https://github.com/SciCatProject/panosc-search-api">
-            PaNOSC search API</a></strong> can be hooked between the central search portal and 
-            the local metadata catalogues and will modify queries on the fly in such a way that 
-            conditions referring to a technique will be expanded to include all child techniques 
+            PaNOSC search API</a></strong> can be hooked between the central search portal and
+            the local metadata catalogues and will modify queries on the fly in such a way that
+            conditions referring to a technique will be expanded to include all child techniques
             in PaNET. </li>
-        <li><strong>Targeted search for training materials</strong> using 
+        <li><strong>Targeted search for training materials</strong> using
             <a href="https://pan-training.eu/">PaN Training</a></li>
-        <li><strong>Find relations between techniques</strong> by querying a 
-            <a href="https://www.w3.org/TR/sparql11-query/">sparql</a> endpoint, e.g. 
+        <li><strong>Find relations between techniques</strong> by querying a
+            <a href="https://www.w3.org/TR/sparql11-query/">sparql</a> endpoint, e.g.
             at <a href="https://metadata.desy.de/qlever">DESY</a></li>
     </ul>
 
-    <h2>Terminology Registries</h2>
-    <p>To explore PaNET and its associated hierarchies, PaNET is listed in different terminology 
-        registries.</p>
-    <ul class="md-itemization">
-        <li><a href="https://bioportal.bioontology.org/ontologies/PANET">
-            Bioportal</a></li>
-        <li><a href="https://terminology.tib.eu/ts/ontologies?and=false&sortedBy=title&page=1&size=10">
-            TIB Terminology Service</a></li>
-        <li><a href="https://fairsharing.org/5410">FAIRsharing</a></li>
-    </ul>
+    <details>
+        <summary class="h2">Terminology Registries</summary>
+        <h2 class="hidden">Terminology Registries</h2>
+        <p>To explore PaNET and its associated hierarchies, PaNET is listed in different terminology
+            registries.</p>
+        <ul class="md-itemization">
+            <li><a href="https://bioportal.bioontology.org/ontologies/PANET">
+                Bioportal</a></li>
+            <li><a href="https://terminology.tib.eu/ts/ontologies?and=false&sortedBy=title&page=1&size=10">
+                TIB Terminology Service</a></li>
+            <li><a href="https://fairsharing.org/5410">FAIRsharing</a></li>
+        </ul>
+    </details>
 
-    <h2>Mappings</h2>
-    <p>Several mappings from PaNET to other semantic artefacts (e.g., vocabularies) exist or 
-        are planned. A mapping connects terms from one dictionary to another and thus helps to 
-        reuse and extend existing use-cases and applications.</p>
-    <ul class="md-itemization">
-        <li><a href="https://github.com/nfdi4cat/voc4cat">voc4cat</a> (established)</li>
-        <li><a href="https://www.wayforlight.eu/">Way for Light</a> (established)</li>
-        <li><a href="https://dictionary.iucr.org/">IUCr dictionary</a> (established)</li>
-        <li><a href="https://goldbook.iupac.org/">IUPAC gold book</a> (established)</li>
-        <li><a href="https://connect.helmholtz-imaging.de/application/">Helmholtz Imaging</a> (established)</li>
-        <li><a href="https://physh.org/">PhySH</a> (ongoing)</li>
-        <li><a href="https://www.wikidata.org/wiki/Wikidata:Main_Page">wikidata</a> (foreseen)</li>
-    </ul>
+    <details>
+        <summary class="h2">Mappings</summary>
+        <h2 class="hidden">Mappings</h2>
+        <p>A mapping connects the terms or concepts listed in different
+            semantic artifacts. A semantic artifact can be a vocabulary,
+            dictionary, ontology, or maybe just a list. Mappings are often
+            created to enable interoperability, data exchange, or integration
+            between different systems, applications, or domains that use
+            different terminology.</p>
+        <p>Several <a href="{{ 'Mappings.html' | relative_url }}">mappings</a> from PaNET to other
+            semantic artifacts (e.g., vocabularies) exist or
+            are planned. A mapping connects terms from one dictionary to another and thus helps to
+            reuse and extend existing use-cases and applications.</p>
+        <ul class="md-itemization">
+            <li><a href="https://github.com/nfdi4cat/voc4cat">voc4cat</a> (established)</li>
+            <li><a href="https://www.wayforlight.eu/">Way for Light</a> (established)</li>
+            <li><a href="https://dictionary.iucr.org/">IUCr dictionary</a> (established)</li>
+            <li><a href="https://goldbook.iupac.org/">IUPAC gold book</a> (established)</li>
+            <li><a href="https://connect.helmholtz-imaging.de/application/">Helmholtz Imaging</a> (established)</li>
+            <li><a href="https://physh.org/">PhySH</a> (ongoing)</li>
+            <li><a href="https://www.wikidata.org/wiki/Wikidata:Main_Page">wikidata</a> (foreseen)</li>
+        </ul>
+    </details>
 
-    <h2>Connected Projects</h2>
-    <ul class="md-itemization">
-        <li><a href="https://github.com/pan-ontologies/esrf-ontologies">ESRF-ET</a></li>
-        <li><a href="https://nomad-lab.eu/nomad-lab/ai-toolkit.html">NOMAD</a></li>
-    </ul>
+    <details>
+        <summary class="h2">Connected Projects</summary>
+        <h2 class="hidden">Connected Projects</h2>
+        <ul class="md-itemization">
+            <li><a href="https://github.com/pan-ontologies/esrf-ontologies">ESRF-ET</a></li>
+            <li><a href="https://nomad-lab.eu/nomad-lab/ai-toolkit.html">NOMAD</a></li>
+        </ul>
+    </details>
 </div>
