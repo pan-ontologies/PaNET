@@ -4,7 +4,6 @@ checks:
     NamespaceHijackingCheck: false
   RDFS:
     MissingDescriptionCheck: false
-    MissingLabelCheck: false
   OWL:
     OntologyIriOboConformanceCheck: false
     SynonymsAsClassesCheck: false
