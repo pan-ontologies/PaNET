@@ -8,6 +8,9 @@
     - name: Applications
       link: "/applications.html"
       description: Applications, terminology registries, mappings and projects related to PaNET
+    - name: News
+      link: "/news.html"
+      description: News and Highlights
 
 - name: Browse
   link: "/ontology_specifications.html"

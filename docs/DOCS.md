@@ -39,6 +39,14 @@ and evaluating the provided artifact.
 - Push button 'Commit changes...' in the top right.
 - Provide detailed commit message, optimally including Motivation, Modification, and Result.
 
+### 1.2.1 Adding a News item
+
+- Create a spotlight graphic and save it in `docs/assets/images/news/`. Square images are recommended, otherwise please use landscape format.
+- Open `docs/_data/news.json`.
+- Add a new block of information, including all fields `title`, `date`, `img_path`, and `description`.
+- The title should fit on 2 lines, which is max. 40 characters.
+- The description field must be one line. Line breaks can only be added using "\n", but are discouraged. Please keep it short.
+
 
 # 1. Creating and Updating the Webpage (Building locally)
 
