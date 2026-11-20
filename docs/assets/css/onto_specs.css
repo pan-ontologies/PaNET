@@ -109,4 +109,5 @@ summary::marker {
     font-weight: bold;
     color: var(--panet-pink);
     font-size: 14pt;
+    font-family: Genos-Regular, sans-serif;
 }
