@@ -2,15 +2,59 @@
 
 :root {
   /* New PANET color palette */
-  --panet-pink:        rgb(186, 69, 118);
-  --panet-purple:      rgb(101, 109, 177);
-  --panet-blue-cyan:   rgb(129, 183, 228);
-  --panet-dark-blue:   rgb(16, 55, 100);
-  --panet-black:       rgb(17, 33, 62);
+  --panet-pink:        rgb(164, 71, 115);
+  --panet-purple:      rgb(102, 110, 174);
+  --panet-blue-cyan:   rgb(149, 184, 227);
+  --panet-dark-blue:   rgb( 21,  40,  74);
+  --panet-black:       rgb( 17,  33, 62);
   --panet-light-grey:  rgb(248, 249, 250);
   --panet-border-grey: rgb(220, 224, 228);
   --panet-light-blue:  rgb(208, 226, 240);
 }
+
+/* FONTS */
+@font-face {
+  font-family: 'Genos-Regular';
+  src: url('../fonts/Genos/static/Genos-Regular.ttf') format('truetype');
+}
+/* Highlight Font, e.g. logo, capital letters ontology page in alphabetic list */
+/* There are more genos fonts available in assets/fonts/muli: 
+      Black, BlackItalic,
+      Bold, BoldItalic,
+      ExtraBold, ExtraBoldItalic,
+      ExtraLight, ExtraLightItalic,
+      Light, LightItalic,
+      Medium, MediumItalic,
+      SemiBold, SemiBoldItalic,
+      Thin, ThinItalic,
+      Italic-VariableFont, VariableFont */
+
+
+@font-face {
+  font-family: 'Muli-Regular';
+  src: url('../fonts/muli/Muli-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Muli-Bold';
+  src: url('../assets/fonts/muli/Muli-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Muli-Italic';
+  src: url('../assets/fonts/muli/Muli-Italic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Muli-BoldItalic';
+  src: url('../assets/fonts/muli/Muli-BoldItalic.ttf') format('truetype');
+}
+/* There are more muli fonts available in assets/fonts/muli: 
+      Black, BlackItalic,
+      ExtraBold, ExtraBoldItalic,
+      ExtraLight, ExtraLightItalic,
+      Light, LightItalic,
+      SemiBold, SemiBoldItalic */
 
 /* Fixed Header Styles */
 #fixed-header {
@@ -40,7 +84,7 @@
 
 .main-title {
   color: white !important;
-  font-family: "Inter", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif !important;
+  font-family: Genos-Regular, sans-serif !important;
   font-size: 2.4rem !important;
   margin: 0 !important;
   line-height: 1.2;
@@ -52,7 +96,7 @@
 body {
   padding-top: 120px;
   margin: 0;
-  font-family: "Inter", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Muli-Regular, sans-serif;
   background-color: var(--panet-light-grey);
   color: var(--panet-black);
 }
@@ -112,7 +156,7 @@ mark {
 
 #scope-sidebar h1 {
   color: var(--panet-dark-blue);
-  font-family: "Inter", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Muli-Regular, sans-serif;
   font-size: 2rem;
   margin-bottom: 25px;
   border-bottom: 4px solid var(--panet-pink);
@@ -183,7 +227,7 @@ mark {
   font-size: 1.2rem;
   border-left: 4px solid transparent;
   font-weight: bold;
-  font-family: "Inter", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Muli-Regular, sans-serif;
 }
 
 .nav-link:hover {
@@ -211,7 +255,7 @@ mark {
   font-size: 1.2rem;
   border-left: 4px solid transparent;
   font-weight: bold;
-  font-family: "Inter", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Muli-Regular, sans-serif;
 }
 
 .nav-link-selected {
@@ -224,7 +268,7 @@ mark {
   font-size: 2.4rem;/*1.2rem;*/
   border-left: 4px solid transparent;
   font-weight: 500;
-  font-family: "Inter", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Muli-Regular, sans-serif;
 }
 
 /* Main Content Area */
@@ -272,7 +316,7 @@ mark {
 
 #scope-sidebar h1, summary.h1 {
   color: var(--panet-purple);
-  font-family: "Inter", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Muli-Regular, sans-serif;
   font-size: 2.5rem;
   margin: 35px 0 20px 0;
   font-weight: 600;
@@ -280,7 +324,7 @@ mark {
 
 #scope-sidebar h2, summary.h2 {
   color: var(--panet-dark-blue);
-  font-family: "Inter", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Muli-Regular, sans-serif;
   font-size: 2rem;
   margin:  25px 0 15px 0;
   font-weight: 700;
@@ -293,7 +337,7 @@ mark {
   font-size: 1.4rem;
   font-weight: 600;
   margin: 25px 0 15px 0;
-  font-family: "Inter", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Muli-Regular, sans-serif;
 }
 
 #scope-sidebar h4, summary.h4 {
@@ -301,7 +345,7 @@ mark {
   font-size: 1.4rem;
   font-weight: 600;
   margin: 15px 0 5px 0;
-  font-family: "Inter", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Muli-Regular, sans-serif;
   font-style: italic;
 }
 
@@ -310,7 +354,7 @@ mark {
   font-size: 1.2rem;
   font-weight: normal;
   margin: 10px 0 5px 0;
-  font-family: "Inter", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Muli-Regular, sans-serif;
   font-style: italic;
 }
 
@@ -404,7 +448,7 @@ mark {
   cursor: pointer;
   transition: all 0.3s ease;
   margin-bottom: 30px;
-  font-family: "Inter", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Muli-Regular, sans-serif;
   box-shadow: 0 2px 8px rgba(186, 69, 118, 0.3);
 }
 
@@ -482,7 +526,7 @@ mark {
 
 .welcome-card h3 {
   color: var(--panet-dark-blue);
-  font-family: "Inter", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Muli-Regular, sans-serif;
   font-size: 1.8rem;
   margin-bottom: 18px;
   font-weight: 600;
@@ -509,7 +553,7 @@ mark {
   box-shadow: 0 2px 8px rgba(101, 109, 177, 0.3);
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  font-family: "Inter", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Muli-Regular, sans-serif;
 }
 
 .btn:hover {
