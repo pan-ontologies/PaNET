@@ -32,7 +32,15 @@ obo:IAO_0000115 rdfs:label "definition"@en .
 
 obo:IAO_0000119 rdfs:label "definition source"@en .
 
+obo:IAO_0000231 rdfs:label "has obsolescence reason"@en .
+
+obo:IAO_0100001 rdfs:label "term replaced by"@en .
+
+owl:deprecated rdfs:label "deprecated"@en .
+
 owl:versionIRI rdfs:label "IRI Version"@en .
+
+rdfs:comment rdfs:label "comment"@en .
 
 sdo:affiliation rdfs:label "Affiliation"@en .
 
